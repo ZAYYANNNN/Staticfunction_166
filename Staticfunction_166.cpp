@@ -13,3 +13,9 @@ public:
 	Mahasiswa(string pnama) :nama(pnama) { setID(); }
 };
 
+int Mahasiswa::nim = 0;
+
+void Mahasiswa::setID() {
+	id = ++nim;
+}
+
